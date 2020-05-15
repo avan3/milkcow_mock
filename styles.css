@@ -1,0 +1,215 @@
+/*  ======
+    Global
+    ====== */
+body {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Karla', sans-serif;
+}
+
+/*  ======
+    Navbar
+    ====== */
+
+.navbar-light .navbar-brand {
+    background-image: url("./img/home/brand.webp");
+    background-repeat: no-repeat;
+    width: 250px;
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    margin: 0px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 15px;
+    color: rgba(0,0,0,0.9) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #1b1b1b !important;
+    opacity: 0.5;
+}
+
+/*  ====
+    Main
+    ==== */
+
+.site-content {
+    background-image: url('./img/home/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+    width: 100%;
+}
+
+.site-content .site-title, .site-content .site-desc {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 6px #333;
+}
+
+.site-title {
+    margin-bottom: 6%;
+    font-size: 3.0rem;
+}
+
+.site-desc {
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.4rem;
+}
+
+/*  =========
+    Section 1
+    ========= */
+
+.section-1 .heading-1 {
+    margin-top: 13%;
+    font-weight: bold;
+}
+
+.section-1 .row {
+    margin-top: 8%;
+    font-family: 'Old Standard TT', serif;
+}
+
+.section-1 .para-1, .section-1 .para-2 {
+    margin: 0 3% 7%;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.section-1 img {
+    margin: 0 0 25px;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+    
+@media screen and (max-width: 1200px) {
+    .section-1 img {
+        max-width: 80%;
+        margin: 0 auto 25px;
+    }
+}
+
+/*  =========
+    Section 2
+    ========= */
+
+.section-2 {
+    background-image: url('./img/home/order-banner.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+
+    margin-top: 8%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section-2 {
+        background-image: url('./img/home/order-banner-tablet.webp');
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .section-2 {
+        background-image: url('./img/home/order-banner-mobile.webp');
+    }
+}
+
+#order-online-btn {
+    padding: 16px 48px;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    border: 2.2px solid #fff;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    font-weight: bold;
+    margin-bottom: 7%;
+    text-shadow: 2px 2px 6px #333;
+}
+
+.section-2 .heading-1 {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 6px #333;
+    margin: 9% 5% 32px;
+}
+
+/*  =========
+    Section 3
+    ========= */
+
+.section-3 {
+    margin-top: 7%;
+    font-family: 'Old Standard TT', serif;
+}
+
+.section-3 h4 {
+    margin-bottom: 8%;
+}
+
+.section-3 .para-1 {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.section-3 img {
+    margin: 5% 0 25px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8%;
+}
+
+/*  =========
+    Section 4
+    ========= */
+
+.section-4 {
+    margin-top: 8%;
+}
+
+.section-4 .heading-1 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#contact-us-btn {
+    padding: 16px 48px;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    color: #1b1b1b;
+    border: 2.2px solid #1b1b1b;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*  ======
+    Footer
+    ====== */
+
+footer h5 {
+    font-size: 14px;
+    font-family: 'Old Standard TT', serif;
+}
