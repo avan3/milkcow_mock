@@ -8,6 +8,24 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+.btn {
+    padding: 16px 48px;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+
+:root {
+    --clr-white: #fff;
+    --clr-black: #1b1b1b;
+
+}
+
 /*  ======
     Navbar
     ====== */
@@ -30,7 +48,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #1b1b1b !important;
+    color: var(--clr-black) !important;
     opacity: 0.5;
 }
 
@@ -47,7 +65,7 @@ body {
 }
 
 .site-content .site-title, .site-content .site-desc {
-    color: #fff;
+    color: var(--clr-white);
     text-align: center;
     text-shadow: 2px 2px 6px #333;
 }
@@ -127,23 +145,21 @@ body {
 }
 
 #order-online-btn {
-    padding: 16px 48px;
-    display: inline-block;
-    background: transparent;
-    text-decoration: none;
-    color: #fff;
-    border: 2.2px solid #fff;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    overflow: hidden;
-    font-weight: bold;
+    color: var(--clr-white);
+    border: 2.2px solid var(--clr-white);
     margin-bottom: 7%;
     text-shadow: 2px 2px 6px #333;
 }
 
+#order-online-btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    text-shadow: none;
+}
+
 .section-2 .heading-1 {
     font-weight: bold;
-    color: #fff;
+    color: var(--clr-white);
     text-shadow: 2px 2px 6px #333;
     margin: 9% 5% 32px;
 }
@@ -164,7 +180,7 @@ body {
 .section-3 .para-1 {
     line-height: 1.8;
     font-size: 18px;
-    color: #000;
+    color: var(--clr-black);
     letter-spacing: 1px;
 }
 
@@ -192,17 +208,14 @@ body {
 }
 
 #contact-us-btn {
-    padding: 16px 48px;
-    display: inline-block;
-    background: transparent;
-    text-decoration: none;
-    color: #1b1b1b;
-    border: 2.2px solid #1b1b1b;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    overflow: hidden;
-    font-weight: bold;
+    color: var(--clr-black);
+    border: 2.2px solid var(--clr-black);
     text-transform: uppercase;
+}
+
+#contact-us-btn:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 /*  ======
@@ -212,4 +225,8 @@ body {
 footer h5 {
     font-size: 14px;
     font-family: 'Old Standard TT', serif;
+}
+
+footer .container-fluid a {
+    color: var(--clr-black);
 }
