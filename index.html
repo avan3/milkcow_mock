@@ -48,7 +48,7 @@
             <div class="site-content h-100">
                 <div class="d-flex align-items-center justify-content-around h-100">
                     <div class="d-flex flex-column"></div>
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column" data-0-top="opacity:0;left:100px" data-450-top="opacity:1;left:0px">
                         <h1 class="site-title">All About Dessert</h1>
                         <p class="site-desc">Natural Milk Soft-Serve</p>
                     </div>
@@ -58,10 +58,10 @@
 
         <div class="section-1">
             <div class="container text-center">
-                <h4 class="heading-1">NATURAL MILK ICE-CREAM AND DESSERTS CAFE</h4>
+                <h4 class="heading-1" data-center-center="opacity:1;left:0px" data-0-bottom="opacity:0;left:200px;">NATURAL MILK ICE-CREAM AND DESSERTS CAFE</h4>
 
                 <div class="row justify-content-center">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6" data-0="opacity:0;left:-150px" data-500-top="opacity:1;left:0px">
                         <div class="d-flex flex-row">
                             <div class="d-flex flex-column">
                                 <h4>ALL ABOUT DESSERT 'MILKCOW'</h4>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6" data-0="opacity:0;left:150px" data-500-top="opacity:1;left:0px">
                         <div class="d-flex flex-row">
                             <div class="d-flex flex-column">
                                 <h4>NATURAL MILK SOFT-SERVE</h4>
@@ -85,7 +85,7 @@
 
         <div class="section-2">
             <div class="container-fluid">
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center" data-550-top="opacity:1;top:0;" data-0="opacity:0;top:400px;">
                     <div class="col-lg-12">
                         <h1 class="heading-1">Hungry? Order for pickup or delivery</h1>
                         <a href="#" id="order-online-btn" class="btn">Order Online</a>
@@ -100,15 +100,16 @@
                     <div class="col-lg-6">
                         <div class="d-flex flex-row">
                             <div class="d-flex">
-                                <img src="./img/home/section-3-img.webp" alt="Milkcow" class="rounded">
+                                <img src="./img/home/section-3-img.webp" alt="Milkcow" class="rounded" data-300-top="opacity:1;left:0px" data-0="opacity:0;left:-300px;">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="d-flex flex-row">
                             <div class="d-flex flex-column">
-                                <h4>THE PREMIUM DESSERT</h4>
-                                <p class="para-1">Our best selling product, Milky Cube, is made of natural milk and topped with 100% natural honey comb. 
+                                <h4 data-500-top="opacity:1;left:0px" data-0="opacity:0;left:300px;">THE PREMIUM DESSERT</h4>
+                                <p class="para-1" data-400-top="opacity:1;left:0px" data-0="opacity:0;left:325px;">
+                                    Our best selling product, Milky Cube, is made of natural milk and topped with 100% natural honey comb. 
                                     <br><br>
                                     We offer various topping menus with our premium soft ice cream and keep developing new topping menus to satisfy our existing and new customers.
                                     <br><br>
@@ -163,6 +164,23 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="skrollr.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            // initialize skrollr if the window width is large enough
+            if ($(window).width() > 767) {
+                skrollr.init();
+            }
+
+            // disable skrollr if the window is resized below 768px wide
+            $(window).on('resize', function () {
+                if ($(window).width() <= 767) {
+                    console.log('in here')
+                    skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+                }
+            });
+        });
+    </script>
 
     </body>
 </html>
