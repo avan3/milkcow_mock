@@ -256,3 +256,8 @@ footer h5 {
 footer .container-fluid a {
     color: var(--clr-black);
 }
+
+footer .hr {
+    width: 50px;
+    margin-bottom: 5%;
+}
