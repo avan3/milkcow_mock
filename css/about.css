@@ -1,0 +1,44 @@
+/*  =========
+    Section 1
+    ========= */
+
+.section-1 {
+    margin: 7% 0;
+}
+
+.section-1 .container-fluid{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-1 .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1 .col-md-6 {
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-1 .container-fluid{
+        width: 100%;
+    }
+}
+
+.section-1 .site-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-1 .para-1 {
+    line-height: 27px;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.embed-responsive-item {
+    max-width: 701px;
+    max-height: 395px;
+}

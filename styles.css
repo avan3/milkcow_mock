@@ -37,6 +37,7 @@ body {
 
 .navbar {
     z-index: 100;
+    text-align: center;
 }
 
 .navbar-light .navbar-brand {
@@ -47,6 +48,22 @@ body {
     background-size: contain;
     height: 80px;
     margin: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-link {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-light .navbar-brand {
+        width: 200px;
+    }
+
+    .nav-link {
+        margin: 4px 8px !important;
+    }
 }
 
 .nav-link {
@@ -79,12 +96,12 @@ body {
     text-shadow: 2px 2px 6px #333;
 }
 
-.site-title {
+.site-content .site-title {
     margin-bottom: 6%;
     font-size: 3.0rem;
 }
 
-.site-desc {
+.site-content .site-desc {
     font-family: 'Old Standard TT', serif;
     font-size: 1.4rem;
 }
@@ -110,7 +127,7 @@ body {
     line-height: 1.8;
 }
 
-.section-1 img {
+.section-1 .img {
     margin: 0 0 25px;
     object-fit: cover;
     object-position: center;
@@ -120,7 +137,7 @@ body {
 }
     
 @media screen and (max-width: 1200px) {
-    .section-1 img {
+    .section-1 .img {
         max-width: 80%;
         margin: 0 auto 25px;
     }
