@@ -35,6 +35,10 @@ body {
     Navbar
     ====== */
 
+.navbar {
+    z-index: 100;
+}
+
 .navbar-light .navbar-brand {
     background-image: url("./img/home/brand.webp");
     background-repeat: no-repeat;
