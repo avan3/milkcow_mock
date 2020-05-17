@@ -59,3 +59,15 @@
 .section-1 .para-1 {
     margin: 6% 0;
 }
+
+.order-now-btn {
+    color: var(--clr-black);
+    border: 2.2px solid var(--clr-black);
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+.order-now-btn:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
