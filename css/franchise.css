@@ -7,7 +7,7 @@
 }
 
 .section-1 .heading-1 {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: normal;
     margin-top: 5%;
     margin-bottom: 4%;
@@ -16,7 +16,7 @@
 .section-1 .para-1 {
     font-size: 18px;
     margin: 0 0 7%;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.65);
 }
 
 .section-1 .img {
