@@ -1,0 +1,83 @@
+/*  =========
+    Section-2 
+    ========= */
+
+.section-2 {
+    background-image: url('../img/contact/contact-us-banner.jpg');
+    margin-top: 1%;
+    background-position: center center;
+}
+
+.section-2 .container-fluid {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.section-2 .heading-1{
+    margin: 7% 0;
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-2 .heading-1 {
+        margin: 12% 0;
+    }
+
+    .section-2 {
+        background-position: center bottom;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-2 .heading-1 {
+        margin: 14% 0;
+        font-size: 2.7rem;
+    }
+
+    .section-2 {
+        background-position: center bottom;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-2 .heading-1 {
+        margin: 18% 0;
+        font-size: 2.4rem;
+    }
+}
+
+/*  =========
+    Section-1
+    ========= */
+
+.section-1 .container-fluid {
+    max-width: 80%;
+}
+
+.section-1 .heading-4, footer {
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-1 .container-fluid {
+        max-width: 100%;
+    }
+
+    .section-1 .heading-4, footer {
+        margin-top: 15%;
+    }
+}
+
+.contact-location-btn {
+    color: var(--clr-black);
+    border: 2.2px solid var(--clr-black);
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    margin: 5%;
+}
+
+.contact-location-btn:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
