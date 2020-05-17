@@ -2,6 +2,10 @@
     Section 1
     ========= */
 
+.section-1 .row {
+    margin-top: 4%;
+}
+
 .section-1 .heading-1 {
     font-size: 22px;
     font-weight: normal;
@@ -16,7 +20,7 @@
 }
 
 .section-1 .img {
-    margin: 12% 0 0;
+    margin: 12% 0;
     object-fit: contain;
     max-width: 100%;
     overflow: hidden;
@@ -36,6 +40,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    .section-1 .row {
+        margin-top: 8%;
+    }
+
     .section-1 .img {
         margin: 0;
     }

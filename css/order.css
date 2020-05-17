@@ -1,0 +1,61 @@
+/*  =========
+    Section-2 
+    ========= */
+
+.section-2 {
+    margin-top: 1%;
+}
+
+.section-2 .container-fluid {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.section-2 .heading-1{
+    margin: 9% 0;
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px #000;
+}
+
+@media screen and (max-width: 992px) {
+    .section-2 .heading-1 {
+        margin: 14% 0;
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-2 .heading-1 {
+        margin: 20% 0;
+        font-size: 2.4rem;
+    }
+}
+
+/*  =========
+    Section-1
+    ========= */
+
+.section-1 .row {
+    margin-top: 0;
+}
+
+.section-1 .heading-4 {
+    font-weight: bold;
+    margin-top: 6%;
+}
+
+@media screen and (max-width: 768px) {
+    .section-1 .heading-4 {
+        margin-top: 10%;
+    }
+}
+
+.section-1 .img {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.section-1 .para-1 {
+    margin: 6% 0;
+}
