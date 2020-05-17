@@ -2,7 +2,7 @@
     Section 1
     ========= */
 
-.section-1 {
+.section-1, footer {
     margin-top: 10%;
 }
 
@@ -16,11 +16,6 @@
     margin-top: 5%;
     max-width: 100%;
     object-fit: contain;
-}
-
-
-footer {
-    margin-top: 10%;
 }
 
 @media screen and (max-width: 1200px) {
