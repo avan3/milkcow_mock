@@ -48,6 +48,7 @@
 
 .section-1 .container-fluid {
     max-width: 80%;
+    text-transform: uppercase;
 }
 
 .section-1 .heading-4, footer {
@@ -68,7 +69,6 @@
 .contact-location-btn {
     color: var(--clr-black);
     border: 2.2px solid var(--clr-black);
-    text-transform: uppercase;
     font-family: 'Karla', sans-serif;
     margin: 5%;
 }
@@ -76,4 +76,99 @@
 .contact-location-btn:hover {
     background-color: var(--clr-black);
     color: var(--clr-white);
+}
+
+/*  =========
+    Section-5
+    ========= */
+
+.section-5 .container-fluid {
+    max-width: 60%;
+}
+
+.section-5 .row {
+    font-family: 'Old Standard TT', serif;
+}
+    
+.section-5 .site-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-5 .site-title, footer, .section-5 form {
+    margin-top: 10%;
+}
+
+.section-5 .heading-4 {
+    margin-top: 18%;
+}
+
+.section-5 .heading-4, .section-5 p, .section-5 .form-group label {
+    letter-spacing: 1px;
+}
+
+.section-5 .para-1 {
+    margin-top: 9%;
+}
+
+.section-5 #messageField {
+    width: 100%;
+}
+
+.section-5 #nameField, .section-5 #emailField, .section-5 #messageField {
+    background: rgba(0,0,0,0);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 1200px) {
+    .section-5 .container-fluid {
+        max-width: 85%;
+    }
+
+    .section-5 .site-title, .section-5 .heading-4, footer, .section-5 form, .section-5 .contact-location-btn {
+        margin-top: 15%;
+    }
+    
+    .section-5 .contact-location-btn {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-5 .container-fluid {
+        max-width: 100%;
+    }
+
+    .section-5 form {
+        max-width: 93%;
+    }
+
+    .section-5 .heading-4, .section-5 p {
+        text-align: center;
+    }
+
+    .section-5 p, .section-5 table {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+}
+
+/*  ====
+    Form
+    ==== */
+
+.section-5 .hours tr:first-of-type {
+    font-weight: bold;
+}
+
+.display-none {
+    display: None;
+}
+
+.display-block {
+    display: block;
 }
